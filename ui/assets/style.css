@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@400;600&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+.stApp {
+    background: 
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+        url("assets/f1_background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Winner card */
+.winner-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #111, #1a1a1a);
+    box-shadow: 0 0 40px rgba(255,0,0,0.6);
+    animation: slideUp 0.8s ease-out;
+}
+
+.winner-img {
+    width: 160px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255,255,255,0.3);
+}
+
+.winner-text h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.winner-text h3 {
+    margin: 4px 0;
+    color: #ff1e00;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 12px;
+    right: 20px;
+    font-size: 12px;
+    color: #aaa;
+    opacity: 0.7;
+}
+/* ---------------- TEAM GLOWS ---------------- */
+
+.glow-red-bull {
+    box-shadow: 0 0 45px rgba(30, 90, 255, 0.9);
+}
+
+.glow-ferrari {
+    box-shadow: 0 0 45px rgba(220, 0, 0, 0.9);
+}
+
+.glow-mercedes {
+    box-shadow: 0 0 45px rgba(150, 220, 220, 0.9);
+}
+
+.glow-mclaren {
+    box-shadow: 0 0 45px rgba(255, 135, 0, 0.9);
+}
+
+.glow-aston-martin {
+    box-shadow: 0 0 45px rgba(0, 110, 90, 0.9);
+}
+
+.glow-alpine {
+    box-shadow: 0 0 45px rgba(0, 150, 255, 0.9);
+}
+
+.glow-williams {
+    box-shadow: 0 0 45px rgba(0, 90, 255, 0.9);
+}
+
+.glow-default {
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.4);
+}

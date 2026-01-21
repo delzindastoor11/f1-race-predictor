@@ -1,0 +1,15 @@
+feature_name,entity,description,source,available_at,valid_for,leakage_risk
+driver_elo,driver,Rolling driver skill rating,derived,season_start,both,low
+driver_incident_rate,driver,Accident DNF probability,derived,season_start,both,medium
+driver_dnf_rate_mech,driver,Mechanical DNF probability,derived,season_start,both,medium
+constructor_pace_index,constructor,Rolling team pace,derived,season_start,both,low
+constructor_momentum,constructor,Pace trend over recent races,derived,season_start,both,medium
+circuit_type,circuit,Track category,manual,pre_weekend,both,low
+overtake_difficulty,circuit,Overtaking ease proxy,derived,pre_weekend,both,low
+safety_car_rate,circuit,Historical safety car probability,derived,pre_weekend,both,low
+weather_rain_prob,race,Rain probability forecast,external,race_morning,both,medium
+ambient_temp,race,Expected ambient temperature,external,race_morning,both,medium
+track_temp,race,Expected track temperature,derived,race_morning,both,medium
+weather_volatility,race,Weather variability likelihood,derived,race_morning,both,high
+quali_position,driver,Qualifying position,ergast,post_qualifying,post_quali,high
+quali_gap_to_pole,driver,Qualifying gap to pole,derived,post_qualifying,post_quali,high
